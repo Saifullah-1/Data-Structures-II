@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbb0fb62-302a-488e-a6e8-a4a4b2d92721" name="Changes" comment="Initial" />
+    <list default="true" id="bbb0fb62-302a-488e-a6e8-a4a4b2d92721" name="Changes" comment="Fixed the format of these files.&#10;No change in the code itself.">
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/t.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/SortArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/SortArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/insertianSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/insertianSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/quickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/quickSort.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +25,7 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2dfW1FDugsJOPFnY68sckU9Wtxz" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -35,6 +42,10 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/temp/Data-Structures-II",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
     "vue.rearranger.settings.migration": "true"
@@ -42,6 +53,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alsha\IdeaProjects\Data-Structures-II\Sorting Techniques\src\main\java\org\datastructure" />
       <recent name="C:\Users\WORK UEFI\Desktop\Data-Structures-II\Sorting Techniques\src\main" />
     </key>
   </component>
@@ -65,6 +77,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,6 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710399396350</updated>
       <workItem from="1710407889911" duration="47000" />
+      <workItem from="1710419090120" duration="2281000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <option name="closed" value="true" />
@@ -99,15 +119,35 @@
       <option name="project" value="LOCAL" />
       <updated>1710406938961</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed the format of these files.&#10;No change in the code itself.">
+      <option name="closed" value="true" />
+      <created>1710419390373</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710419390374</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
+    <MESSAGE value="Fixed the format of these files.&#10;No change in the code itself." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the format of these files.&#10;No change in the code itself." />
   </component>
 </project>

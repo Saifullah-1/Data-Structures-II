@@ -1,3 +1,5 @@
+package org.datastructure;
+
 public class insertianSort {
 
     public static int[][] insertion_sort(int[] OriginalArray) {

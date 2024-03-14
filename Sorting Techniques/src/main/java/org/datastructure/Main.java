@@ -16,9 +16,9 @@ public class Main {
         NON_COMPARISON
     }
 
-    public static void printLists(List<List<Integer>> lists) {
-        for (List<Integer> list : lists) {
-            System.out.println(list);
+    public static void printLists(List<int[]> lists) {
+        for (int[] list : lists) {
+            System.out.println(Arrays.toString(list));
         }
     }
 
@@ -58,8 +58,8 @@ public class Main {
 
     public static boolean promptForIntermediateArrays() {
         String userChoice;
-        final List<String> yesGroup = Arrays.asList("y", "Y", "Yes", "yes", "YES");
-        final List<String> noGroup = Arrays.asList("n", "N", "No", "no", "NO");
+        final List<String> yesGroup = List.of("y", "Y", "Yes", "yes", "YES");
+        final List<String> noGroup = List.of("n", "N", "No", "no", "NO");
         do {
             System.out.print("Do you want to display intermediate arrays? (Y/N): ");
             userChoice = sc.nextLine();
@@ -75,7 +75,7 @@ public class Main {
             SortArray sortArray = promptForFilePath();
             SortingOption sortingOption = promptForSortingOption();
             boolean isIntermediate = promptForIntermediateArrays();
-            List<List<Integer>> sortedLists = switch (sortingOption) {
+            List<int[]> sortedLists = switch (sortingOption) {
                 case SIMPLE -> sortArray.simpleSort(isIntermediate);
                 case EFFICIENT -> sortArray.efficientSort(isIntermediate);
                 case NON_COMPARISON -> sortArray.nonComparisonSort(isIntermediate);

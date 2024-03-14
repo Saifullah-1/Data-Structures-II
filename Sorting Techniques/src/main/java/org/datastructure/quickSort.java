@@ -1,3 +1,5 @@
+package org.datastructure;
+
 import java.util.ArrayList;
 import java.util.Random;
 
