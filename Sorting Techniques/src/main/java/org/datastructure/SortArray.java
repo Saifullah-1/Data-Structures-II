@@ -35,7 +35,7 @@ public class SortArray {
                 }
             }
         }
-        if (!intermediate) steps.add(arr);
+        if (steps.isEmpty()) steps.add(arr);
         return steps;
     }
 
@@ -67,7 +67,7 @@ public class SortArray {
             if (intermediate) steps.add(sorted.clone());
             --countArray[arr[i] - mn];
         }
-        if (!intermediate) steps.add(sorted.clone());
+        if (steps.isEmpty()) steps.add(sorted);
         return steps;
     }
 }
