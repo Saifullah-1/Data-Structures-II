@@ -45,10 +45,10 @@ public class Main {
             System.out.println("[2] Non-Comparison Sort");
             while (!sc.hasNextInt()) {
                 System.out.println("Invalid input. Please enter a number between 0 and 2.");
-                sc.next(); // Consume the invalid input
+                sc.next();
             }
             userChoice = sc.nextInt();
-            sc.nextLine(); // Consume newline left-over
+            sc.nextLine();
             if (userChoice < 0 || userChoice > 2) {
                 System.out.println("Invalid input. Please enter a number between 0 and 2.");
             }
@@ -70,9 +70,29 @@ public class Main {
         return yesGroup.contains(userChoice);
     }
 
+    public static int promptForContinuationOption() {
+        int userChoice;
+        do {
+            System.out.println("Select an option:");
+            System.out.println("[0] Open a new file");
+            System.out.println("[1] Continue with the same file");
+            System.out.println("[2] Exit");
+            while (!sc.hasNextInt()) {
+                System.out.println("Invalid input. Please enter a number between 0 and 2.");
+                sc.next();
+            }
+            userChoice = sc.nextInt();
+            sc.nextLine();
+            if (userChoice < 0 || userChoice > 2) {
+                System.out.println("Invalid input. Please enter a number between 0 and 2.");
+            }
+        } while (userChoice < 0 || userChoice > 2);
+        return userChoice;
+    }
+
     public static void main(String[] args) throws FileNotFoundException {
+        SortArray sortArray = promptForFilePath();
         while (true) {
-            SortArray sortArray = promptForFilePath();
             SortingOption sortingOption = promptForSortingOption();
             boolean isIntermediate = promptForIntermediateArrays();
             List<int[]> sortedLists = switch (sortingOption) {
@@ -81,6 +101,14 @@ public class Main {
                 case NON_COMPARISON -> sortArray.nonComparisonSort(isIntermediate);
             };
             printLists(sortedLists);
+            System.out.println("*****************");
+
+            int continuationOption = promptForContinuationOption();
+            if (continuationOption == 0) {
+                sortArray = promptForFilePath();
+            } else if (continuationOption == 2) {
+                break;
+            }
         }
     }
 }

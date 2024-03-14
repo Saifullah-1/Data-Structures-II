@@ -21,25 +21,22 @@ public class SortArray {
     }
 
     public List<int[]> simpleSort(boolean intermediate) {
-        List<int[]> ans = new ArrayList<>();
-        int[] currentArray = array.clone(); // Clone the original array to avoid modifying it directly.
-        ans.add(currentArray.clone()); // Add a clone of the current state to the list.
-        for (int i = 0; i < currentArray.length - 1; i++) {
-            for (int j = 0; j < currentArray.length - i - 1; j++) {
-                if (currentArray[j] > currentArray[j + 1]) {
-                    int temp = currentArray[j];
-                    currentArray[j] = currentArray[j + 1];
-                    currentArray[j + 1] = temp;
+        List<int[]> steps = new ArrayList<>();
+        int[] arr = array.clone();
 
-                    // Change happens -> New intermediate array.
-                    if (intermediate) {
-                        ans.add(currentArray.clone()); // Add a clone of the current state.
-                    }
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                    if (intermediate) steps.add(arr.clone());
+
                 }
             }
         }
-        if (!intermediate) ans.add(currentArray); // Add the final sorted array if intermediate is false.
-        return ans;
+        if (!intermediate) steps.add(arr);
+        return steps;
     }
 
     public List<int[]> efficientSort(boolean intermediate) {
@@ -47,7 +44,30 @@ public class SortArray {
     }
 
     public List<int[]> nonComparisonSort(boolean intermediate) {
-        return null;
-    }
+        List<int[]> steps = new ArrayList<>();
+        int[] arr = array.clone();
 
+        int mx = Integer.MIN_VALUE, mn = Integer.MAX_VALUE;
+        for (int x : arr) {
+            mx = Math.max(mx, x);
+            mn = Math.min(mn, x);
+        }
+
+        int[] countArray = new int[mx - mn + 1];
+
+        for (int x : arr) ++countArray[x - mn];
+
+        for (int i = 1; i < countArray.length; ++i) {
+            countArray[i] += countArray[i - 1];
+        }
+
+        int[] sorted = new int[arr.length];
+        for (int i = arr.length - 1; i >= 0; --i) {
+            sorted[countArray[arr[i] - mn] - 1] = arr[i];
+            if (intermediate) steps.add(sorted.clone());
+            --countArray[arr[i] - mn];
+        }
+        if (!intermediate) steps.add(sorted.clone());
+        return steps;
+    }
 }

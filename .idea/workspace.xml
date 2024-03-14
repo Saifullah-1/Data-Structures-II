@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbb0fb62-302a-488e-a6e8-a4a4b2d92721" name="Changes" comment="Fixed the format of these files.&#10;No change in the code itself.">
-      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/t.txt" afterDir="false" />
+    <list default="true" id="bbb0fb62-302a-488e-a6e8-a4a4b2d92721" name="Changes" comment="Changed the List to array, and implemented bubble sort.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/SortArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/SortArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/insertianSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/insertianSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/quickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/quickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/insertianSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/insertianSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/quickSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/t.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/t.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,25 +33,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/temp/Data-Structures-II",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/temp/Data-Structures-II&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\alsha\IdeaProjects\Data-Structures-II\Sorting Techniques\src\main\java\org\datastructure" />
@@ -93,7 +94,9 @@
       <option name="presentableId" value="Default" />
       <updated>1710399396350</updated>
       <workItem from="1710407889911" duration="47000" />
-      <workItem from="1710419090120" duration="2281000" />
+      <workItem from="1710419090120" duration="6855000" />
+      <workItem from="1710430822729" duration="2558000" />
+      <workItem from="1710433397211" duration="386000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <option name="closed" value="true" />
@@ -127,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710419390374</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed the List to array, and implemented bubble sort.">
+      <option name="closed" value="true" />
+      <created>1710421576006</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710421576006</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +159,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial" />
     <MESSAGE value="Fixed the format of these files.&#10;No change in the code itself." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the format of these files.&#10;No change in the code itself." />
+    <MESSAGE value="Changed the List to array, and implemented bubble sort." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the List to array, and implemented bubble sort." />
   </component>
 </project>
