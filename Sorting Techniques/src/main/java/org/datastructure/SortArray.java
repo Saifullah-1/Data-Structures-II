@@ -15,19 +15,20 @@ public class SortArray {
         for (int i = 0; i < in.length; ++i) {
             int num = Integer.parseInt(in[i]);
             list.add(num);
+//            System.out.print(num + " ");
         }
     }
 
     public List<List<Integer>> simpleSort(boolean intermediate) {
-
+        return null;
     }
 
     public List<List<Integer>> efficientSort(boolean intermediate) {
-
+        return null;
     }
 
     public List<List<Integer>> nonComparisonSort(boolean intermediate) {
-
+        return null;
     }
 }
 
