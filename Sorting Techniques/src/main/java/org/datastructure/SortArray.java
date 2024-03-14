@@ -11,7 +11,7 @@ public class SortArray {
 
     public SortArray(File file) throws FileNotFoundException {
         Scanner fileScanner = new Scanner(file);
-        String []in = fileScanner.nextLine().split(", ");
+        String[] in = fileScanner.nextLine().split(", ");
         for (int i = 0; i < in.length; ++i) {
             int num = Integer.parseInt(in[i]);
             list.add(num);

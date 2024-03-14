@@ -71,14 +71,16 @@ public class Main {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        SortArray sortArray = promptForFilePath();
-        SortingOption sortingOption = promptForSortingOption();
-        boolean isIntermediate = promptForIntermediateArrays();
-        List<List<Integer>> sortedLists = switch (sortingOption) {
-            case SIMPLE -> sortArray.simpleSort(isIntermediate);
-            case EFFICIENT -> sortArray.efficientSort(isIntermediate);
-            case NON_COMPARISON -> sortArray.nonComparisonSort(isIntermediate);
-        };
-        printLists(sortedLists);
+        while (true) {
+            SortArray sortArray = promptForFilePath();
+            SortingOption sortingOption = promptForSortingOption();
+            boolean isIntermediate = promptForIntermediateArrays();
+            List<List<Integer>> sortedLists = switch (sortingOption) {
+                case SIMPLE -> sortArray.simpleSort(isIntermediate);
+                case EFFICIENT -> sortArray.efficientSort(isIntermediate);
+                case NON_COMPARISON -> sortArray.nonComparisonSort(isIntermediate);
+            };
+            printLists(sortedLists);
+        }
     }
 }
