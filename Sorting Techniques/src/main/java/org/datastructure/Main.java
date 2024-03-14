@@ -2,94 +2,83 @@ package org.datastructure;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void printList(List<List<Integer>> list) {
 
+    private static final Scanner sc = new Scanner(System.in);
+
+    public enum SortingOption {
+        SIMPLE,
+        EFFICIENT,
+        NON_COMPARISON
+    }
+
+    public static void printLists(List<List<Integer>> lists) {
+        for (List<Integer> list : lists) {
+            System.out.println(list);
+        }
+    }
+
+    public static SortArray promptForFilePath() throws FileNotFoundException {
+        File file;
+        do {
+            System.out.print("Enter file Path: ");
+            String path = sc.nextLine();
+            file = new File(path);
+            if (!file.exists()) {
+                System.out.println("Error: File not found: " + file.getAbsolutePath());
+            }
+        } while (!file.exists());
+
+        return new SortArray(file);
+    }
+
+    public static SortingOption promptForSortingOption() {
+        int userChoice;
+        do {
+            System.out.println("Select sort type:");
+            System.out.println("[0] Simple Sort");
+            System.out.println("[1] Efficient Sort");
+            System.out.println("[2] Non-Comparison Sort");
+            while (!sc.hasNextInt()) {
+                System.out.println("Invalid input. Please enter a number between 0 and 2.");
+                sc.next(); // Consume the invalid input
+            }
+            userChoice = sc.nextInt();
+            sc.nextLine(); // Consume newline left-over
+            if (userChoice < 0 || userChoice > 2) {
+                System.out.println("Invalid input. Please enter a number between 0 and 2.");
+            }
+        } while (userChoice < 0 || userChoice > 2);
+        return SortingOption.values()[userChoice];
+    }
+
+    public static boolean promptForIntermediateArrays() {
+        String userChoice;
+        final List<String> yesGroup = Arrays.asList("y", "Y", "Yes", "yes", "YES");
+        final List<String> noGroup = Arrays.asList("n", "N", "No", "no", "NO");
+        do {
+            System.out.print("Do you want to display intermediate arrays? (Y/N): ");
+            userChoice = sc.nextLine();
+            if (!yesGroup.contains(userChoice) && !noGroup.contains(userChoice)) {
+                System.out.println("Invalid input, try again.");
+            }
+        } while (!yesGroup.contains(userChoice) && !noGroup.contains(userChoice));
+        return yesGroup.contains(userChoice);
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner sc = new Scanner(System.in);
-        while(true) {
-            // Ask user for file path
-            System.out.print("Enter file Path: ");
-            String filePath = sc.nextLine();
-            File file = new File(filePath);
-            if (!file.exists()) {
-                System.out.println("File not found!");
-                continue;
-            }
-            SortArray sortArray = new SortArray(file);
-            // Print the menu [1] Simple Sort [2] Efficient Sort [3] Non-Comparison Sort [4] exit
-            System.out.println("Please select sort type: [1] Simple Sort [2] Efficient Sort [3] Non-Comparison Sort");
-            int sortType = sc.nextInt();
-            char ch;
-            List<List<Integer>> list;
-            switch (sortType) {
-                case 1:
-                    // Ask user if he wants intermediate arrays
-                    System.out.print("Do you want intermediate arrays? Y/N");
-                    ch = sc.next().charAt(0);
-                    switch (ch) {
-                        case 'Y': case 'y':
-                            list = sortArray.simpleSort(true);
-                            // print list
-                            printList(list);
-                            break;
-                        case 'N': case 'n':
-                            list = sortArray.simpleSort(false);
-                            // print list
-                            printList(list);
-                            break;
-                        default:
-                            // TODO
-                            break;
-                    }
-                    break;
-                case 2:
-                    // Ask user if he wants intermediate arrays
-                    System.out.print("Do you want intermediate arrays? Y/N");
-                    ch = sc.next().charAt(0);
-                    switch (ch) {
-                        case 'Y': case 'y':
-                            list = sortArray.efficientSort(true);
-                            // print list
-                            printList(list);
-                            break;
-                        case 'N': case 'n':
-                            list = sortArray.efficientSort(false);
-                            // print list
-                            printList(list);
-                            break;
-                        default:
-                            // TODO
-                            break;
-                    }
-                    break;
-                case 3:
-                    // Ask user if he wants intermediate arrays
-                    System.out.print("Do you want intermediate arrays? Y/N");
-                    ch = sc.next().charAt(0);
-                    switch (ch) {
-                        case 'Y': case 'y':
-                            list = sortArray.nonComparisonSort(true);
-                            // print list
-                            printList(list);
-                            break;
-                        case 'N': case 'n':
-                            list = sortArray.nonComparisonSort(false);
-                            // print list
-                            printList(list);
-                            break;
-                        default:
-                            // TODO
-                            break;
-                    }
-                    break;
-            }
-        }
+        SortArray sortArray = promptForFilePath();
+        SortingOption sortingOption = promptForSortingOption();
+        boolean isIntermediate = promptForIntermediateArrays();
+        List<List<Integer>> sortedLists = switch (sortingOption) {
+            case SIMPLE -> sortArray.simpleSort(isIntermediate);
+            case EFFICIENT -> sortArray.efficientSort(isIntermediate);
+            case NON_COMPARISON -> sortArray.nonComparisonSort(isIntermediate);
+        };
+        printLists(sortedLists);
     }
 }
