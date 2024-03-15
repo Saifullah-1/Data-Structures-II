@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class SortArray {
@@ -40,7 +41,12 @@ public class SortArray {
     }
 
     public List<int[]> efficientSort(boolean intermediate) {
-        return null;
+        List<int[]> steps= new ArrayList<>();
+        int[] arr=array.clone();
+        List<Integer>pivots= new ArrayList<>();
+        QuickSort(arr,0,arr.length-1,intermediate,steps,pivots);
+        steps.add(pivots.stream().mapToInt(Integer::intValue).toArray());
+        return steps;
     }
 
     public List<int[]> nonComparisonSort(boolean intermediate) {
@@ -69,5 +75,43 @@ public class SortArray {
         }
         if (steps.isEmpty()) steps.add(sorted);
         return steps;
+    }
+    private void random(int[] sorted, int low, int high) {
+        Random rand = new Random();
+        int pivot = rand.nextInt(high - low) + low;
+        int temp = sorted[pivot];
+        sorted[pivot] = sorted[high];
+        sorted[high] = temp;
+    }
+
+    private int quick_sort(int[] OriginalArray, int start, int end,boolean intermediate,List<int []>steps) {
+        random(OriginalArray, start, end);
+        int pivot_element = OriginalArray[end];
+        int pivot_index = start - 1;
+        for (int i = start; i < end; i++) {
+            if (OriginalArray[i] < pivot_element) {
+                pivot_index++;
+                if (pivot_index != i) {
+                    int temp = OriginalArray[i];
+                    OriginalArray[i] = OriginalArray[pivot_index];
+                    OriginalArray[pivot_index] = temp;
+                }
+            }
+        }
+        pivot_index++;
+        int temp = OriginalArray[pivot_index];
+        OriginalArray[pivot_index] = OriginalArray[end];
+        OriginalArray[end] = temp;
+        steps.add(OriginalArray.clone());
+        return pivot_index;
+    }
+
+    public void QuickSort(int[] OriginalArray, int start, int end,boolean intermediate,List<int []>steps,List<Integer>pivots) {
+        if (start < end) {
+            int pivot = quick_sort(OriginalArray, start, end,intermediate,steps);
+            pivots.add(pivot);
+            QuickSort(OriginalArray, start, pivot - 1,intermediate,steps,pivots);
+            QuickSort(OriginalArray, pivot + 1, end,intermediate,steps,pivots);
+        }
     }
 }

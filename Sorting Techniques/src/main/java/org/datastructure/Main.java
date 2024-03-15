@@ -90,7 +90,7 @@ public class Main {
         return userChoice;
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
+        public static void main(String[] args) throws FileNotFoundException {
         SortArray sortArray = promptForFilePath();
         while (true) {
             SortingOption sortingOption = promptForSortingOption();

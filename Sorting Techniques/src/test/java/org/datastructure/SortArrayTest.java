@@ -40,7 +40,7 @@ class SortArrayTest {
         SortArray sortArray = new SortArray(tempFile);
         List<int[]> result = sortArray.efficientSort(false);
         assertThat(result).isNotNull();
-        assertThat(result.get(result.size() - 1)).isEqualTo(parseArray(expected));
+        assertThat(result.get(result.size() - 2)).isEqualTo(parseArray(expected));
     }
 
     @ParameterizedTest
@@ -50,7 +50,7 @@ class SortArrayTest {
         SortArray sortArray = new SortArray(tempFile);
         List<int[]> result = sortArray.efficientSort(true);
         assertThat(result).isNotNull();
-        assertThat(result.get(result.size() - 1)).isEqualTo(parseArray(expected));
+        assertThat(result.get(result.size() - 2)).isEqualTo(parseArray(expected));
     }
 
 
