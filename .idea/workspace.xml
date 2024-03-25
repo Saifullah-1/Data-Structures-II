@@ -4,22 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbb0fb62-302a-488e-a6e8-a4a4b2d92721" name="Changes" comment="implemented counting sort, and added more menu options.">
+    <list default="true" id="bbb0fb62-302a-488e-a6e8-a4a4b2d92721" name="Changes" comment="removed duplicate files.">
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/demo_ass1_test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/01-reversed-ne5-ke8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/02-sorted-ne5-ke8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/03-empty.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/04-identical-ne4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/05-identical-ne3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/06-random-ne3-ke.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/07-single-element.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/08-negative-ne4-ke8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/09-two-elements-ke8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/10-two-elements-ke9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/11-bubble-stress-ne6-ke2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/12-reversed-ne5-ke0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/13-longs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/14-increasing-size.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/15-counting-vs-quick.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting Techniques/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/SortArray(2).java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/SortArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/SortArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/quickSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/main/java/org/datastructure/t.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/test/java/org/datastructure/SortArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/java/org/datastructure/SortArrayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting Techniques/src/test/resources/test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting Techniques/testFile.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportTestResults" exportFormat="Xml" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="SortArrayTest" />
+    </enabled-run-configurations>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -33,37 +60,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SortArrayTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SortArrayTest.simpleSort (1).executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SortArrayTest.simpleSort.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/temp/Data-Structures-II&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "JUnit.SortArrayTest.efficientSortWithoutIntermediates.executor": "Run",
+    "JUnit.SortArrayTest.executor": "Run",
+    "JUnit.SortArrayTest.nonComparisonSortStress.executor": "Run",
+    "JUnit.SortArrayTest.nonComparisonSortWithoutIntermediates.executor": "Run",
+    "JUnit.SortArrayTest.simpleSort (1).executor": "Debug",
+    "JUnit.SortArrayTest.simpleSort.executor": "Run",
+    "JUnit.SortArrayTest.simpleSortLongs.executor": "Run",
+    "JUnit.SortArrayTest.simpleSortWithoutIntermediates (1).executor": "Run",
+    "JUnit.SortArrayTest.simpleSortWithoutIntermediates.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/temp/Data-Structures-II",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\alsha\IdeaProjects\Data-Structures-II\Sorting Techniques\src\test\resources" />
       <recent name="C:\Users\alsha\IdeaProjects\Data-Structures-II\Sorting Techniques\src\main\java\org\datastructure" />
+      <recent name="C:\Users\alsha\IdeaProjects\Data-Structures-II\Sorting Techniques\src\test\resources" />
       <recent name="C:\Users\WORK UEFI\Desktop\Data-Structures-II\Sorting Techniques\src\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.SortArrayTest.nonComparisonSortLongs">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.datastructure.Main" />
       <module name="SortingTechniques" />
@@ -77,7 +111,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortArrayTest.efficientSortLongs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortingTechniques" />
       <extension name="coverage">
         <pattern>
@@ -87,15 +121,67 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.datastructure" />
       <option name="MAIN_CLASS_NAME" value="org.datastructure.SortArrayTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="efficientSortLongs" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortArrayTest.nonComparisonSortLongs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortingTechniques" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.datastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.datastructure" />
+      <option name="MAIN_CLASS_NAME" value="org.datastructure.SortArrayTest" />
+      <option name="METHOD_NAME" value="nonComparisonSortLongs" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortArrayTest.nonComparisonSortStress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortingTechniques" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.datastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.datastructure" />
+      <option name="MAIN_CLASS_NAME" value="org.datastructure.SortArrayTest" />
+      <option name="METHOD_NAME" value="nonComparisonSortStress(int[],int[])" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortArrayTest.simpleSortLongs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortingTechniques" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.datastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.datastructure" />
+      <option name="MAIN_CLASS_NAME" value="org.datastructure.SortArrayTest" />
+      <option name="METHOD_NAME" value="simpleSortLongs" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SortArrayTest.nonComparisonSortLongs" />
+        <item itemvalue="JUnit.SortArrayTest.efficientSortLongs" />
+        <item itemvalue="JUnit.SortArrayTest.simpleSortLongs" />
+        <item itemvalue="JUnit.SortArrayTest.nonComparisonSortStress" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.SortArrayTest" />
       </list>
     </recent_temporary>
   </component>
@@ -118,7 +204,12 @@
       <workItem from="1710419090120" duration="6855000" />
       <workItem from="1710430822729" duration="2558000" />
       <workItem from="1710433397211" duration="5296000" />
-      <workItem from="1710500496823" duration="2034000" />
+      <workItem from="1710500496823" duration="7234000" />
+      <workItem from="1710518745706" duration="2192000" />
+      <workItem from="1710533339832" duration="14785000" />
+      <workItem from="1710599358019" duration="17923000" />
+      <workItem from="1711379884970" duration="418000" />
+      <workItem from="1711380381968" duration="5453000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <option name="closed" value="true" />
@@ -168,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710434084614</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="removed duplicate files.">
+      <option name="closed" value="true" />
+      <created>1710504026312</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710504026312</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +290,7 @@
     <MESSAGE value="Fixed the format of these files.&#10;No change in the code itself." />
     <MESSAGE value="Changed the List to array, and implemented bubble sort." />
     <MESSAGE value="implemented counting sort, and added more menu options." />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented counting sort, and added more menu options." />
+    <MESSAGE value="removed duplicate files." />
+    <option name="LAST_COMMIT_MESSAGE" value="removed duplicate files." />
   </component>
 </project>
